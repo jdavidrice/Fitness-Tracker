@@ -3,7 +3,7 @@
 # requested for review when someone opens a pull request.
 # A simple space separated list of usernames will do.
 
-* @davidsaulrodriguez
+* @jdavidrice
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only
@@ -16,7 +16,7 @@
 # used to look up users just like we do for commit author
 # emails.
 
-# *.js david@bsdadm.com
+# *.js jdavidrice@gmail.com
 
 
 # For more infomation, check out the CODEOWNERS docs: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners

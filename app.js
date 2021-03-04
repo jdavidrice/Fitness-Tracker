@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (_req, res) => {
   return res.send(`<h1>Welcome to
-    <a href="https://github.com/davidsaulrodriguez/nodejs-repo-template" target="_blank">NodeJS-Repo-Template</a<</h1>`);
+    <a href="https://github.com/jdavidrice/nodejs-repo-template" target="_blank">NodeJS-Repo-Template</a<</h1>`);
 });
 
 const PORT = process.env.PORT || 3000;

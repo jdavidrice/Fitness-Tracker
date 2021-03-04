@@ -4,21 +4,21 @@ This is a simple, yet complete, barebones **Node Repo Template**. It can be used
 
 <span align="center">
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/davidsaulrodriguez/nodejs-repo-template)
-[![Build Status](https://travis-ci.com/davidsaulrodriguez/nodejs-repo-template.svg?branch=main)](https://travis-ci.com/davidsaulrodriguez/nodejs-repo-template)
-[![GitHub license](https://img.shields.io/github/license/davidsaulrodriguez/nodejs-repo-template)](https://github.com/davidsaulrodriguez/nodejs-repo-template)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jdavidrice/nodejs-repo-template)
+[![Build Status](https://travis-ci.com/jdavidrice/nodejs-repo-template.svg?branch=main)](https://travis-ci.com/jdavidrice/nodejs-repo-template)
+[![GitHub license](https://img.shields.io/github/license/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template)
 
 ---
 
-[![GitHub issues](https://img.shields.io/github/issues/davidsaulrodriguez/nodejs-repo-template)](https://github.com/davidsaulrodriguez/nodejs-repo-template/issues)
-[![GitHub forks](https://img.shields.io/github/forks/davidsaulrodriguez/nodejs-repo-template)](https://github.com/davidsaulrodriguez/nodejs-repo-template/network)
-[![GitHub stars](https://img.shields.io/github/stars/davidsaulrodriguez/nodejs-repo-template)](https://github.com/davidsaulrodriguez/nodejs-repo-template/stargazers)
-![GitHub contributors](https://img.shields.io/github/contributors/davidsaulrodriguez/nodejs-repo-template)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=davidsaulrodriguez_nodejs-repo-template&metric=bugs)](https://sonarcloud.io/dashboard?id=davidsaulrodriguez_nodejs-repo-template)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=davidsaulrodriguez_nodejs-repo-template&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=davidsaulrodriguez_nodejs-repo-template)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=davidsaulrodriguez_nodejs-repo-template&metric=security_rating)](https://sonarcloud.io/dashboard?id=davidsaulrodriguez_nodejs-repo-template)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=davidsaulrodriguez_nodejs-repo-template&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=davidsaulrodriguez_nodejs-repo-template)
-![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/davidsaulrodriguez/nodejs-repo-template/latest/main)
+[![GitHub issues](https://img.shields.io/github/issues/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template/issues)
+[![GitHub forks](https://img.shields.io/github/forks/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template/network)
+[![GitHub stars](https://img.shields.io/github/stars/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template/stargazers)
+![GitHub contributors](https://img.shields.io/github/contributors/jdavidrice/nodejs-repo-template)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=bugs)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=security_rating)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
+![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/jdavidrice/nodejs-repo-template/latest/main)
 
 </span>
 

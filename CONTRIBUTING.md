@@ -12,9 +12,9 @@ We suggest you read the Git Branching Model document to get familiar with how we
 
 Below are a list of steps to quickly get you contributing to this project.
 
-1. Fork the project (```https://github.com/davidsaulrodriguez/nodejs-repo-template```)
+1. Fork the project (```https://github.com/jdavidrice/nodejs-repo-template```)
 2. Clone it on your machine (```git clone https://github.com/yourUsername/nodejs-repo-template.git```)
-3. Add the upstream remote (```git remote add upstream https://github.com/davidsaulrodriguez/nodejs-repo-template.git```)
+3. Add the upstream remote (```git remote add upstream https://github.com/jdavidrice/nodejs-repo-template.git```)
 4. Stay up to date with the upstream project
   - (```git fetch upstream``` )
   - (```git checkout main```)
