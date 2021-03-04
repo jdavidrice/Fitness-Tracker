@@ -1,5 +1,5 @@
 {
-  "name": "fitness_tracker",
+  "name": "mongoose_skeleton",
   "version": "1.0.0",
   "description": "Fitness tracker app",
   "main": "server.js",
