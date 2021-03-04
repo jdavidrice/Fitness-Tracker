@@ -4,7 +4,7 @@
   "description": "Fitness tracker app",
   "main": "server.js",
   "scripts": {
-    // "lint": "eslint './**/*.js' --quiet",
+    "lint": "eslint './**/*.js' --quiet",
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "node server.js",
     "watch": "nodemon server.js",
