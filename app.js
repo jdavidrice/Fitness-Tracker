@@ -21,11 +21,11 @@ const collections = ["fitnessdata"];
 const db = mongojs(databasuUrl, collections);
 
 db.on("error", error => {
-  console.log("Database error:", error)
-})
+    console.log("Database error:", error);
+});
 
 app.get("/", (_req, res) => {
-  res.sendFile(path.join(__dirname + "./public/index.html"));
+    res.sendFile(path.join(__dirname + "./public/index.html"));
 });
 
 // Additional routes go here
@@ -33,9 +33,9 @@ app.get("/", (_req, res) => {
 const PORT = process.env.PORT || 3000;
 const IP = process.env.IP || "127.0.0.1";
 app.listen(PORT, IP, (err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(`Server is listening at: http://${IP}:${PORT}`);
-  }
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(`Server is listening at: http://${IP}:${PORT}`);
+    }
 });

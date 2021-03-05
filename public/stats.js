@@ -2,45 +2,45 @@
 /* eslint-disable no-unused-vars */
 function generatePalette() {
 
-	const arr = [
+    const arr = [
 
-		"#003f5c",
+        "#003f5c",
 
-		"#2f4b7c",
+        "#2f4b7c",
 
-		"#665191",
+        "#665191",
 
-		"#a05195",
+        "#a05195",
 
-		"#d45087",
+        "#d45087",
 
-		"#f95d6a",
+        "#f95d6a",
 
-		"#ff7c43",
+        "#ff7c43",
 
-		"ffa600",
+        "ffa600",
 
-		"#003f5c",
+        "#003f5c",
 
-		"#2f4b7c",
+        "#2f4b7c",
 
-		"#665191",
+        "#665191",
 
-		"#a05195",
+        "#a05195",
 
-		"#d45087",
+        "#d45087",
 
-		"#f95d6a",
+        "#f95d6a",
 
-		"#ff7c43",
+        "#ff7c43",
 
-		"ffa600",
+        "ffa600",
 
-	];
+    ];
 
 
 
-	return arr;
+    return arr;
 
 }
 
@@ -48,303 +48,303 @@ function generatePalette() {
 
 function populateChart(data) {
 
-	let durations = data.map(({ totalDuration }) => totalDuration);
+    let durations = data.map(({ totalDuration }) => totalDuration);
 
-	let pounds = calculateTotalWeight(data);
+    let pounds = calculateTotalWeight(data);
 
-	let workouts = workoutNames(data);
+    let workouts = workoutNames(data);
 
-	const colors = generatePalette();
+    const colors = generatePalette();
 
 
 
-	let line = document.querySelector("#canvas").getContext("2d");
+    let line = document.querySelector("#canvas").getContext("2d");
 
-	let bar = document.querySelector("#canvas2").getContext("2d");
+    let bar = document.querySelector("#canvas2").getContext("2d");
 
-	let pie = document.querySelector("#canvas3").getContext("2d");
+    let pie = document.querySelector("#canvas3").getContext("2d");
 
-	let pie2 = document.querySelector("#canvas4").getContext("2d");
+    let pie2 = document.querySelector("#canvas4").getContext("2d");
 
 
 
-	const daysOfWeek = [
+    const daysOfWeek = [
 
-		"Sunday",
+        "Sunday",
 
-		"Monday",
+        "Monday",
 
-		"Tuesday",
+        "Tuesday",
 
-		"Wednesday",
+        "Wednesday",
 
-		"Thursday",
+        "Thursday",
 
-		"Friday",
+        "Friday",
 
-		"Saturday",
+        "Saturday",
 
-	];
+    ];
 
 
 
-	const labels = data.map(({ day }) => {
+    const labels = data.map(({ day }) => {
 
-		const date = new Date(day);
+        const date = new Date(day);
 
-		return daysOfWeek[date.getDay()];
+        return daysOfWeek[date.getDay()];
 
-	});
+    });
 
 
 
-	let lineChart = new Chart(line, {
+    let lineChart = new Chart(line, {
 
-		type: "line",
+        type: "line",
 
-		data: {
+        data: {
 
-			labels,
+            labels,
 
-			datasets: [
+            datasets: [
 
-				{
+                {
 
-					label: "Workout Duration In Minutes",
+                    label: "Workout Duration In Minutes",
 
-					backgroundColor: "red",
+                    backgroundColor: "red",
 
-					borderColor: "red",
+                    borderColor: "red",
 
-					data: durations,
+                    data: durations,
 
-					fill: false,
+                    fill: false,
 
-				},
+                },
 
-			],
+            ],
 
-		},
+        },
 
-		options: {
+        options: {
 
-			responsive: true,
+            responsive: true,
 
-			title: {
+            title: {
 
-				display: true,
+                display: true,
 
-			},
+            },
 
-			scales: {
+            scales: {
 
-				xAxes: [
+                xAxes: [
 
-					{
+                    {
 
-						display: true,
+                        display: true,
 
-						scaleLabel: {
+                        scaleLabel: {
 
-							display: true,
+                            display: true,
 
-						},
+                        },
 
-					},
+                    },
 
-				],
+                ],
 
-				yAxes: [
+                yAxes: [
 
-					{
+                    {
 
-						display: true,
+                        display: true,
 
-						scaleLabel: {
+                        scaleLabel: {
 
-							display: true,
+                            display: true,
 
-						},
+                        },
 
-					},
+                    },
 
-				],
+                ],
 
-			},
+            },
 
-		},
+        },
 
-	});
+    });
 
 
 
-	let barChart = new Chart(bar, {
+    let barChart = new Chart(bar, {
 
-		type: "bar",
+        type: "bar",
 
-		data: {
+        data: {
 
-			labels,
+            labels,
 
-			datasets: [
+            datasets: [
 
-				{
+                {
 
-					label: "Pounds",
+                    label: "Pounds",
 
-					data: pounds,
+                    data: pounds,
 
-					backgroundColor: [
+                    backgroundColor: [
 
-						"rgba(255, 99, 132, 0.2)",
+                        "rgba(255, 99, 132, 0.2)",
 
-						"rgba(54, 162, 235, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
 
-						"rgba(255, 206, 86, 0.2)",
+                        "rgba(255, 206, 86, 0.2)",
 
-						"rgba(75, 192, 192, 0.2)",
+                        "rgba(75, 192, 192, 0.2)",
 
-						"rgba(153, 102, 255, 0.2)",
+                        "rgba(153, 102, 255, 0.2)",
 
-						"rgba(255, 159, 64, 0.2)",
+                        "rgba(255, 159, 64, 0.2)",
 
-					],
+                    ],
 
-					borderColor: [
+                    borderColor: [
 
-						"rgba(255, 99, 132, 1)",
+                        "rgba(255, 99, 132, 1)",
 
-						"rgba(54, 162, 235, 1)",
+                        "rgba(54, 162, 235, 1)",
 
-						"rgba(255, 206, 86, 1)",
+                        "rgba(255, 206, 86, 1)",
 
-						"rgba(75, 192, 192, 1)",
+                        "rgba(75, 192, 192, 1)",
 
-						"rgba(153, 102, 255, 1)",
+                        "rgba(153, 102, 255, 1)",
 
-						"rgba(255, 159, 64, 1)",
+                        "rgba(255, 159, 64, 1)",
 
-					],
+                    ],
 
-					borderWidth: 1,
+                    borderWidth: 1,
 
-				},
+                },
 
-			],
+            ],
 
-		},
+        },
 
-		options: {
+        options: {
 
-			title: {
+            title: {
 
-				display: true,
+                display: true,
 
-				text: "Pounds Lifted",
+                text: "Pounds Lifted",
 
-			},
+            },
 
-			scales: {
+            scales: {
 
-				yAxes: [
+                yAxes: [
 
-					{
+                    {
 
-						ticks: {
+                        ticks: {
 
-							beginAtZero: true,
+                            beginAtZero: true,
 
-						},
+                        },
 
-					},
+                    },
 
-				],
+                ],
 
-			},
+            },
 
-		},
+        },
 
-	});
+    });
 
 
 
-	let pieChart = new Chart(pie, {
+    let pieChart = new Chart(pie, {
 
-		type: "pie",
+        type: "pie",
 
-		data: {
+        data: {
 
-			labels: workouts,
+            labels: workouts,
 
-			datasets: [
+            datasets: [
 
-				{
+                {
 
-					label: "Exercises Performed",
+                    label: "Exercises Performed",
 
-					backgroundColor: colors,
+                    backgroundColor: colors,
 
-					data: durations,
+                    data: durations,
 
-				},
+                },
 
-			],
+            ],
 
-		},
+        },
 
-		options: {
+        options: {
 
-			title: {
+            title: {
 
-				display: true,
+                display: true,
 
-				text: "Exercises Performed",
+                text: "Exercises Performed",
 
-			},
+            },
 
-		},
+        },
 
-	});
+    });
 
 
 
-	let donutChart = new Chart(pie2, {
+    let donutChart = new Chart(pie2, {
 
-		type: "doughnut",
+        type: "doughnut",
 
-		data: {
+        data: {
 
-			labels: workouts,
+            labels: workouts,
 
-			datasets: [
+            datasets: [
 
-				{
+                {
 
-					label: "Exercises Performed",
+                    label: "Exercises Performed",
 
-					backgroundColor: colors,
+                    backgroundColor: colors,
 
-					data: pounds,
+                    data: pounds,
 
-				},
+                },
 
-			],
+            ],
 
-		},
+        },
 
-		options: {
+        options: {
 
-			title: {
+            title: {
 
-				display: true,
+                display: true,
 
-				text: "Exercises Performed",
+                text: "Exercises Performed",
 
-			},
+            },
 
-		},
+        },
 
-	});
+    });
 
 }
 
@@ -352,35 +352,35 @@ function populateChart(data) {
 
 function calculateTotalWeight(data) {
 
-	let totals = [];
+    let totals = [];
 
 
 
-	data.forEach((workout) => {
+    data.forEach((workout) => {
 
-		const workoutTotal = workout.exercises.reduce((total, { type, weight }) => {
+        const workoutTotal = workout.exercises.reduce((total, { type, weight }) => {
 
-			if (type === "resistance") {
+            if (type === "resistance") {
 
-				return total + weight;
+                return total + weight;
 
-			} else {
+            } else {
 
-				return total;
+                return total;
 
-			}
+            }
 
-		}, 0);
-
-
-
-		totals.push(workoutTotal);
-
-	});
+        }, 0);
 
 
 
-	return totals;
+        totals.push(workoutTotal);
+
+    });
+
+
+
+    return totals;
 
 }
 
@@ -388,25 +388,25 @@ function calculateTotalWeight(data) {
 
 function workoutNames(data) {
 
-	let workouts = [];
+    let workouts = [];
 
 
 
-	data.forEach((workout) => {
+    data.forEach((workout) => {
 
-		workout.exercises.forEach((exercise) => {
+        workout.exercises.forEach((exercise) => {
 
-			workouts.push(exercise.name);
+            workouts.push(exercise.name);
 
-		});
+        });
 
-	});
+    });
 
 
 
-	// return de-duplicated array with JavaScript `Set` object
+    // return de-duplicated array with JavaScript `Set` object
 
-	return [...new Set(workouts)];
+    return [...new Set(workouts)];
 
 }
 
