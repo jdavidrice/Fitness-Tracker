@@ -23,15 +23,15 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { use
 
 
 app.get("/", (_req, res) => {
-    res.sendFile(path.join(__dirname + "./public/index.html"));
+  res.sendFile(path.join(__dirname + "./public/index.html"));
 });
 
 
 const IP = process.env.IP || "127.0.0.1";
 app.listen(PORT, IP, (err) => {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log(`Server is listening at: http://${IP}:${PORT}`);
-    }
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(`Server is listening at: http://${IP}:${PORT}`);
+  }
 });
