@@ -7,8 +7,6 @@ const logger = require("morgan");
 
 const PORT = process.env.PORT || 3000;
 
-
-// const User = require("./userModel.js");
 const app = express();
 
 app.use(logger("dev"));
@@ -20,6 +18,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true });
+
+app.use(require("./public/api.js"));
 
 
 app.get("/", (_req, res) => {
