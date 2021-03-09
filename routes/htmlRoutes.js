@@ -1,24 +1,48 @@
-// Dependencies
+// // Dependencies
+// const path = require("path");
+
+// // Routes
+// module.exports = (app) => {
+//   // Each of the below routes just handles the HTML page that the user gets sent to.
+
+
+//   app.get("/", (req, res) =>
+//     res.sendFile(path.join(__dirname, "../public/index.html"))
+//   );
+
+//   app.get("/exercise", (req, res) =>
+//     res.sendFile(path.join(__dirname, "../public/exercise.html"))
+//   );
+
+//   app.get("/stats", (req, res) =>
+//     res.sendFile(path.join(__dirname, "../public/stats.html"))
+//   );
+
+// };
+
 const path = require("path");
 
-// Routes
-module.exports = (app) => {
-  // Each of the below routes just handles the HTML page that the user gets sent to.
+module.exports = function (app) {
+  app.get("/:action", (req, res) => {
+    let action = req.params.action;
+    if (action) {
+      switch (action) {
+      case "/":
+        res.sendFile(path.join(__dirname, "../public/index.html"));
+        break;
 
-  // index route loads view.html
-  app.get("/", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/index.html"))
-  );
+      case "exercise":
+        res.sendFile(path.join(__dirname, "../public/exercise.html"));
+        break;
 
-  app.get("/exercise", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/exercise.html"))
-  );
+      case "stats":
+        res.sendFile(path.join(__dirname, "../public/stats.html"));
+        break;
 
-  app.get("/stats", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/stats.html"))
-  );
-
-  app.get("/authors", (req, res) =>
-    res.sendFile(path.join(__dirname, "../public/author-manager.html"))
-  );
+      default:
+        res.sendFile(path.join(__dirname, "../public/index.html"));
+        break;
+      }
+    }
+  });
 };
