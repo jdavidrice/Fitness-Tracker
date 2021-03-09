@@ -43,4 +43,3 @@ const API = {
     return json;
   },
 };
-
