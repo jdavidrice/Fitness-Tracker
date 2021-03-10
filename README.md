@@ -77,6 +77,6 @@ SOFTWARE.
 
 ## Tests
 
-No tests
+This Heroku app uses Travis CI and Datree Smart Policy.
 
 *   [Return to Top](#Fitness-Tracker)
