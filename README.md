@@ -1,106 +1,82 @@
-# Node Repo Template
-
-This is a simple, yet complete, barebones **Node Repo Template**. It can be used to easily and quickly create a project repo for your next NodeJS based project.
+# Fitness Tracker
 
 <span align="center">
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jdavidrice/nodejs-repo-template)
-[![Build Status](https://travis-ci.com/jdavidrice/nodejs-repo-template.svg?branch=main)](https://travis-ci.com/jdavidrice/nodejs-repo-template)
-[![GitHub license](https://img.shields.io/github/license/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template)
+[![Build Status](https://travis-ci.com/jdavidrice/fitness-tracker.svg?branch=main)](https://travis-ci.com/jdavidrice/fitness-tracker)
+[![GitHub license](https://img.shields.io/github/license/jdavidrice/fitness-tracker)](https://github.com/jdavidrice/fitness-tracker)
 
 ---
 
-[![GitHub issues](https://img.shields.io/github/issues/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template/issues)
-[![GitHub forks](https://img.shields.io/github/forks/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template/network)
-[![GitHub stars](https://img.shields.io/github/stars/jdavidrice/nodejs-repo-template)](https://github.com/jdavidrice/nodejs-repo-template/stargazers)
-![GitHub contributors](https://img.shields.io/github/contributors/jdavidrice/nodejs-repo-template)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=bugs)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=security_rating)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jdavidrice_nodejs-repo-template&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=jdavidrice_nodejs-repo-template)
-![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/jdavidrice/nodejs-repo-template/latest/main)
-
 </span>
 
-**Note: This repo does not currently contain routes or an MVC pattern as these can be subjective and vary from project to project.**
+## Description
 
-> If a general MVC configuration pattern can be agreed upon or suggested then it will be taken into consideration for merging with a pull request in the next release.
+A fitness-tracking app that uses MongoDB/Mongoose, Express, and Node.
 
-This repo contains the following tree structure:
+[Link to Deployed App](https://best-fitness-tracker-app.herokuapp.com)
 
-```shell
-./nodejs-repo-template/
-├── app.js
-├── CODE_OF_CONDUCT.md
-├── CODEOWNERS
-├── CONTRIBUTING.md
-├── docs
-│   ├── assets
-│   │   └── images
-│   │       ├── chart.png
-│   │       ├── feature.png
-│   │       └── hotfix.png
-│   ├── Branching_Model.md
-│   └── Coordinated_Vulnerability_Disclosure.md
-├── .env.example
-├── .eslintrc.json
-├── .github
-│   ├── ISSUE_TEMPLATE
-│   │   ├── bug_report.md
-│   │   └── feature_request.md
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── wip.yml
-├── .gitignore
-├── LICENSE
-├── package.json
-├── package-lock.json
-├── README.md
-├── SECURITY.md
-├── SLC.md
-└── .travis.yml
+![Photo of App](fitness-tracker.png)
 
-5 directories, 23 files
-```
+## Table of Contents
 
-## About the included files
+*   [Description](#Description)
+*   [Installation](#Installation)
+*   [Usage](#Usage)
+*   [License](#License)
+*   [Contributing](#Contributing)
+*   [Tests](#Tests)
+*   [Questions](#Questions)
 
-- `.gitignore` - This is a basic .gitignore file that ignores common files for Linux, MacOS, Windows, Visual Studio Code, Node, React, React Native, Vue.js and Angular.
+## Installation
 
-- `.eslintrc.json` - An ES Lint file that enables rules that report common problems and help to avoid errors. View the list of available rules [here](https://eslint.org/docs/rules/).
+There is nothing to install to use this web app. 
 
-- `.travis.yml` - A simple TravisCI configuration file that tries to cover the most basic needs for a NodeJS build.
+## Usage 
 
-- `CODEOWNERS` - Code owners are automatically requested for review when someone opens a pull request that modifies code that they own.
+When the user loads the page, they are given the option to create a new workout or continue with their last workout. The user can then:
+  * Add exercises to the most recent workout plan.
+  * Add new exercises to a new workout plan.
+  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+  * View the total duration of each workout from the past seven workouts on the `stats` page.
 
-- `CODE_OF_CONDUCT.md` - A code of conduct defines standards for how to engage in a community. It signals an inclusive environment that respects all contributions. It also outlines procedures for addressing problems between members of your project's community. This COC is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/).
+## Questions
 
-- `CONTRIBUTING.md` - This file contains instructions on how to quicly get started with contributing to the project.
+Please contact me at the email address listed below with any questions about this app. 
 
-- `SECURITY.md` - This file is used to give people instructions for responsibly reporting security vulnerabilities in your project.
+[jdavidrice@gmail.com](mailto:jdavidrice@gmail.com)
 
-- `SLC.md` - This file is used to inform people about the **Support Life Cycle** of your software and its supported versions.
+[GitHub Profile](https://github.com/jdavidrice)
 
-- `LICENSE` - A standard BSD 2 Clause license file is included with this template. You may modify this to a license of your own choosing.
+## License
 
-- `app.js` - This file contains a very bare bones Express server that is the entry point for your Node.js project. Feel free remove or rename this file as you see fit.
+MIT License
 
-- `docs/wip.yml` - This is a Work In Progress configuration file to be used with the [WIP](https://github.com/marketplace/wip) application and allow authors of pull requests to set status to pending while still working on it by using specific keywords or emojis in their Pull Request title. 
+Copyright (c) 2021 Jeremy Rice
 
-- `docs/Branching_Model.md` - This file is a detailed document on how branching is handled with this project. It uses proper Git Workflow and best practices to help keep the codebase clean and efficient.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-- `docs/Coordinated_Vulnerability_Disclosure.md` - This file contains a detailed description for the way we approach Coordinated Vulnerability Disclosures.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-- `.github/PULL_REQUEST_TEMPLATE.md` - This file contains a detailed Pull Request Template. Contributors can use this templates to describe the proposed changes in their pull requests according to the repository's contributing guidelines.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-- `.github/ISSUE_TEMPLATE/bug_report.md` - This file contains a template for a detailed bug report that will automatically be tagged with a *bug* label and conforms to the projects contribution guidelines.
+## Contributing
 
-- `.github/ISSUE_TEMPLATE/feature_request.md` - This file contains a template for a detailed feature request that conforms to the projects contribution guidelines. This feature request will automatically be tagged with an *enhancement* label.
+  Jeremy Rice
 
-- `.env.example` - This is just a placeholder file for the project to inform you and other developers that this project supports environment variables via a `.env` file.
+## Tests
 
-- `.package.json` A simple package.json file used to easily pull in the NPM dependencies that this project uses to get you started.
+No tests
 
-- `.package-lock.json` A lock file that provides a manifest that calls out the exact version of every package in the tree at the time of this projects creation/release.
-
-# LICENSE
-This project is licensed under the BSD-2-Clause License.
+*   [Return to Top](#Fitness-Tracker)
