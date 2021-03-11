@@ -48,7 +48,3 @@ branches:
   - /^(release)-\d+\.\d+(\.\d+)?(-\S*)?$/ # Triggers a build on release-x.x.x branches.
 #  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/ # Triggers a build on vX.X.X tags.
 
-ignore:
-  - chart.js
-
-  
